@@ -1,5 +1,5 @@
 ---
-title: "겨울 부츠와 fleece- lined shoes- 따뜻한 겨울을 위한 필수 아이템- 雪 부츠"
+title: "겨울 부츠와 fleece- lined shoes- 따뜻한 겨울을 위한 필수 아이템-  부츠"
 date: 2026-06-20T05:02:00.167+09:00
 slug: "겨울-부츠와-fleece-lined-shoes-따뜻한-겨울을-위한-필수-아이템-부츠"
 description: "겨울 부츠와 fleece-lined shoes는 한국의寒い 겨울을 날 수 있는 필수 아이템입니다."
