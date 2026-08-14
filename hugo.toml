@@ -52,7 +52,7 @@ title = 'GGG Pick 방한용품'
 hasCJKLanguage = true
 buildFuture = true
 buildDrafts = true
-disableKinds = ["RSS", "sitemap"]
+disableKinds = ["RSS"]
 
 [taxonomies]
   tag = "tags"
@@ -80,3 +80,10 @@ disableKinds = ["RSS", "sitemap"]
   [[related.indices]]
     name = "date"
     weight = 10
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+  page = ["HTML"]
