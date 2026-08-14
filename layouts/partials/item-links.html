@@ -1,0 +1,18 @@
+{{/* 🔗 GGG PICK Empire: Cross-linking to /api/item/ product pages */}}
+{{ $itemLinks := .Site.Data.item_links }}
+{{ if $itemLinks }}
+<div class="item-links-container" style="margin: 40px 0; padding: 30px; background: linear-gradient(135deg, #fff8f0, #fff3e0); border-radius: 15px; border: 2px solid #ff9900; box-shadow: 0 4px 15px rgba(255,153,0,0.1);">
+    <p style="margin: 0 0 15px 0; font-size: 1.2rem; font-weight: 900; color: #d35400;">🛒 관련 상품 최저가 확인하기</p>
+    <ul style="margin: 0; padding: 0; list-style: none;">
+        {{ range $itemLinks }}
+        <li style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #ffd699;">
+            <a href="{{ .url }}" style="color: #007185; text-decoration: none; font-weight: 600; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; transition: 0.2s;" onmouseover="this.style.color='#c45500'; this.style.textDecoration='underline';" onmouseout="this.style.color='#007185'; this.style.textDecoration='none';">
+                <span style="background: #ff9900; color: #fff; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 12px; font-weight: 900;">✓</span>
+                {{ replace .title ":" "-" }} 최저가 보러가기
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+    <p style="margin: 10px 0 0 0; font-size: 0.75rem; color: #888; text-align: right;">* 쿠팡 파트너스 활동의 일환으로 수수료를 제공받을 수 있습니다</p>
+</div>
+{{ end }}

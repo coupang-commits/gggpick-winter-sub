@@ -51,6 +51,7 @@
   </header>
   <div class="single-content">{{ .Content }}</div>
   {{ if eq .Section "posts" }}
+  {{ partial "item-links.html" . }}
   <div class="related-posts">
     <h3>🔗 Recommended Picks</h3>
     <ul>
