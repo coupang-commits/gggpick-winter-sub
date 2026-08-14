@@ -20,6 +20,18 @@
 /**/index.html
   Cache-Control: public, max-age=3600, must-revalidate
 
-# Pretty URLs (posts, categories, etc.)
-/*
+# Pretty URLs (no /* catch-all — it was merging into CSS responses)
+/
+  Cache-Control: public, max-age=3600, must-revalidate
+/posts/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/categories/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/tags/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/page/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/v/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/20*
   Cache-Control: public, max-age=3600, must-revalidate
