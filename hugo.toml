@@ -8,6 +8,8 @@ languageCode = 'ko-kr'
 title = 'GGG Pick 방한용품'
 
 [params]
+  ga4MeasurementId = "G-TNPF108FXX"
+  bingSiteVerification = "5E4FE3E0A7C426599CD3A01D739F6FBD"
   # 2. 쿠팡 파트너스 전용 데이터
   target_country = "KR"
   coupang_id = "AF7460738"
@@ -51,7 +53,7 @@ title = 'GGG Pick 방한용품'
 
 hasCJKLanguage = true
 buildFuture = true
-buildDrafts = true
+buildDrafts = false
 disableKinds = ["RSS"]
 
 [taxonomies]
@@ -82,8 +84,14 @@ disableKinds = ["RSS"]
     weight = 10
 
 [outputs]
-  home = ["HTML"]
+  home = ["HTML", "FEED"]
   section = ["HTML"]
   taxonomy = ["HTML"]
   term = ["HTML"]
   page = ["HTML"]
+
+[outputFormats]
+  [outputFormats.FEED]
+    mediaType = "application/rss+xml"
+    baseName = "feed"
+    isPlainText = true
